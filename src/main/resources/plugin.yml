@@ -1,0 +1,17 @@
+name: AntiMapDestroy
+version: 1.0.0
+author: FasmMC
+main: it.riccardomurachelli.mc.AntiMapDestroy.Main
+api-version: 1.17
+description: Plugin per evitare la distruzione della mappa della lobby
+load: STARTUP
+commands:
+  editmap:
+    description:
+    usage: /editmap
+    permission: it.riccardomurachelli.mc.AntiMapDestroy.editMap
+    permission-message: "§4§lNon sei autorizzato ad usare questo comando."
+permissions:
+  it.riccardomurachelli.mc.AntiMapDestroy.editMap:
+    default: op
+    description: Permesso di editare la mappa
